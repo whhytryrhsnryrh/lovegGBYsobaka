@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaby Behehe</title>
+    <style>
+        body {
+            background-color: #f8c8e6; /* Розовый фон */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 3em;
+            color: #ff66b2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .compliments {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #ff4d94;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .meme {
+            display: none;
+            margin-top: 20px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #ff66b2;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #ff3385;
+        }
+        .hidden {
+            display: none;
+        }
+        .poem {
+            font-size: 1.3em;
+            margin-top: 30px;
+            font-style: italic;
+            color: #ff66b2;
+        }
+        .screamer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            z-index: 9999;
+            animation: screamAnim 1s forwards;
+        }
+        @keyframes screamAnim {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.7; }
+            100% { transform: scale(1.5); opacity: 0.5; }
+        }
+        .screamer img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>С Днем Святого Валентина, моя любимая!</h1>
+    <p>С нами уже 9 месяцев ❤️</p>
+
+    <p class="compliments">
+        Ты самая красивая, умная и невероятная девушка на свете. Я горжусь тем, что ты со мной.
+        Каждый день с тобой — это счастье, и я не могу представить свою жизнь без тебя.
+        Ты — мой смысл, моя радость, моя любовь.
+        Любовь с каждым днём становится только сильнее, и это чудо!
+    </p>
+
+    <p class="poem">
+        Ты — мой свет в темном мире,<br>
+        Ты — мой голос в тишине,<br>
+        Вместе мы пройдем все беды,<br>
+        Ты — моя любовь, моя звезда.
+    </p>
+
+    <p>Nu si dinahu dar?</p>
+    
+    <div class="buttons">
+        <button onclick="showMeme()">Да</button>
+        <button onclick="showScreamer()">Нет</button>
+    </div>
+
+    <div id="meme" class="meme">
+        <img src="https://i.imgflip.com/8lsnic.jpg" alt="Meme" width="800">
+    </div>
+
+    <div id="screamer" class="screamer">
+        <img src="https://us-tuna-sounds-images.voicemod.net/88463959-b331-4a6a-b9ee-9843ec1a9229-1665760464118.png" alt="Screamer">
+    </div>
+
+    <script>
+        function showMeme() {
+            document.getElementById('meme').style.display = 'block';
+            document.getElementById('screamer').style.display = 'none';
+        }
+        function showScreamer() {
+            alert('si ai ahuit ?'); 
+            document.getElementById('screamer').style.display = 'block';
+            document.getElementById('meme').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
+
